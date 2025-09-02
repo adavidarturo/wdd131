@@ -1,0 +1,62 @@
+/* Apply a modern font and background color */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+  margin: 0;
+}
+
+/* Header styles */
+header {
+  grid-area: header;
+  background: #2a4365;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+/* Navigation menu using Flexbox */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #da3333;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ffd166;
+}
+
+/* Main content area */
+main {
+  grid-area: main;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(42, 67, 101, 0.05);
+}
+
+/* Footer styles */
+footer {
+  grid-area: footer;
+  background: #2a4365;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
+
