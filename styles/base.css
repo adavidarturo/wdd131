@@ -1,5 +1,4 @@
 
-
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
 
@@ -12,7 +11,8 @@
   --card-bg: #fff;                             /* Card background */
   --border-radius: 10px;                         /* Rounded corners looks better */
   --shadow: 0 2px 8px rgba(42, 67, 101, 0.08); /* Card shadow */
-  --max-width: 900px;                            /* Main content max width */
+  --max-width: 1100px;                           /* Main content max width */
+  --card-border: #23406e33;                    /* Card border color */
 }
 
 /* Body styles and grid layout (header, main, footer) */
@@ -30,8 +30,9 @@ body {
 header {
   background: var(--primary);
   color: #fff;
-  padding: 1.5rem 0 0.5rem 0;
+  padding: 1.2rem 0 0.2rem 0;
   text-align: center;
+  border-bottom: 4px solid var(--secondary);
 }
 
 /* Course title */
@@ -41,7 +42,7 @@ header {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 /*--------------------- Navigation styles ----------------------*/
@@ -50,7 +51,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 3rem;
   background: var(--secondary);
   padding: 1rem 0;
   border-bottom-left-radius: var(--border-radius);
@@ -64,9 +65,10 @@ nav a {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
-  padding: 0.3em 1em;
+  padding: 0.3em 1.5em;
   border-radius: 5px;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.5px;
 }
 
 /* Navigation hover and focus */
@@ -74,6 +76,7 @@ nav a:hover,
 nav a:focus {
   background: var(--accent);
   color: var(--primary);
+  box-shadow: 0 2px 8px var(--accent);
   outline: none;
 }
 
@@ -82,9 +85,9 @@ nav a:focus {
 /* Main content centered */
 main {
   max-width: var(--max-width);
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
   padding: 0 1rem;
 }
@@ -97,6 +100,8 @@ main > h1 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 /*-------------------- Card styles ----------------------*/
@@ -106,11 +111,12 @@ main > h1 {
   background: var(--card-bg);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  padding: 1.5rem 1.2rem;
+  padding: 1.5rem 2rem 2rem 2rem;
+  border: 2.5px solid var(--card-border);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: 1.5px solid #e0e0e0;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
 }
 
 /* Card headings */
@@ -119,21 +125,54 @@ main > h1 {
   color: var(--primary);
   margin-bottom: 1rem;
   font-size: 1.3rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+  background: var(--card-bg);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--primary);
+  margin-top: 0;
 }
 
-/* Card images: */
+/* -------------- Me and conuntry layout -------------------- */
+
 .card img {
   border-radius: 8px;
   margin-bottom: 1rem;
   box-shadow: 0 1px 6px rgba(42, 67, 101, 0.10);
   background: #eee;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Card paragraph */
 .card p {
   font-size: 1rem;
-  text-align: center;
-  margin: 0;
+  text-align: left;
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+.card ul {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 0.7em;
+  font-size: 1rem;
+}
+
+.card ul li a {
+  color: var(--primary);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.card ul li a:hover,
+.card ul li a:focus {
+  color: var(--accent);
 }
 
 /*-------------------- Footer styles ----------------------*/
@@ -146,6 +185,7 @@ footer {
   padding: 1.2rem 0 0.5rem 0;
   font-size: 1rem;
   font-family: 'Roboto', Arial, sans-serif;
+  border-top: 4px solid var(--secondary);
 }
 
 /* Footer paragraphs spacing */
@@ -164,12 +204,13 @@ footer p {
   color: var(--accent);
   font-size: 0.98em;
   margin-top: 0.2em;
+  display: block;
 }
 
 /*-------------------- Responsive styles ----------------------*/
 
 /* Responsive adjustments for mobile screens */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   main {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -186,8 +227,3 @@ footer p {
     font-size: 1.3rem;
   }
 }
-
-
-
-
-
