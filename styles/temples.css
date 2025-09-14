@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+/* ---------------- Root variables for color and spacing ---------------- */
+:root {
+  --primary: #23406e;
+  --secondary: #ffd166;
+  --background: #f4f6fb;
+  --nav-bg: #353535;
+  --text: #222;
+  --card-bg: #fff;
+  --border-radius: 10px;
+  --shadow: 0 2px 8px rgba(42,67,101,0.08);
+}
+
+
+/* ---------------- Base styles ---------------- */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ---------------- Header styles ---------------- */
+header {
+  position: relative;
+  background: var(--primary);
+  color: #fff;
+  padding: 1.2rem 0 0.2rem 0;
+  text-align: center;
+}
+
+header span {
+  display: block;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
+}
+
+
+/* ---------------- Navigation styles ---------------- */
+nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--nav-bg);
+  padding: 1.2rem 0.5rem;
+  border-radius: var(--border-radius);
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+  text-align: center;
+}
+
+nav a:hover,
+nav a:focus {
+  background: var(--secondary);
+  color: var(--primary);
+  outline: none;
+}
+
+
+/* ---------------- Hamburger button style ---------------- */
+#hamburger {
+  display: block;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  cursor: pointer;
+  z-index: 20;
+}
+
+
+/* ---------------- Hamburger menu behavior for mobile ---------------- */
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--nav-bg);
+  padding: 1.2rem 0.5rem;
+  border-radius: var(--border-radius);
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+#nav-menu.open {
+  display: flex;
+}
+
+#nav-menu a { 
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+  text-align: center;
+}
+
+#nav-menu a:hover,
+#nav-menu a:focus { /* Moved from nav a:hover, nav a:focus */
+  background: var(--secondary); 
+  color: var(--primary);
+  outline: none;
+}
+
+
+/* ---------------- Main content ---------------- */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+main > h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+
+/* ---------------- Figure grid items ---------------- */
+figure {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 1px 6px rgba(42,67,101,0.10);
+  background: #eee;
+}
+
+figcaption {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+
+/* ---------------- Footer styles ---------------- */
+footer {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0 0.5rem 0;
+  font-size: 1rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0.2em 0;
+}
+
+#year {
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+#lastModified {
+  color: var(--secondary);
+  font-size: 0.98em;
+  margin-top: 0.2em;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
