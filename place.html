@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/svg-place.css" media="(min-width: 901px)">
     <script src="scripts/place.js" defer></script>
+    <link rel="preload" href="styles/place.css" as="style">
+    <link rel="stylesheet" href="styles/place.css">
 </head>
 <body>
     <header class="symbolic-header">
@@ -21,9 +21,9 @@
         <h1 class="page-title">Tanzania - Africa</h1>
         <section class="hero hero-overlay-layout">
             <picture>
-                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
-                <img src="images/hero-small.webp" alt="Landscape of Tanzania with wildlife" width="400" height="200" loading="lazy">
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)" width="1600" height="700">
+                <source srcset="images/hero-medium.webp" media="(min-width: 600px)" width="800" height="400">
+                <img src="images/hero-small.webp" alt="Landscape of Tanzania with wildlife" width="400" height="200" fetchpriority="high">
             </picture>
             <div class="overlay-tables">
                 <div class="data-table">
