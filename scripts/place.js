@@ -7,10 +7,8 @@ document.getElementById('lastModified').textContent = "Last Modified: " + docume
 const tempC = 15; // Temperature in Celsius (matches <span id="temp">)
 const windKmh = 10; // Wind speed in km/h (matches <span id="wind">)
 
-function calculateWindChill(temp, wind) {
-    // Wind chill only applies if temp <= 10°C and wind > 4.8 km/h
-    return (13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)).toFixed(1);
-}
+// Wind chill only applies if temp <= 10°C and wind > 4.8 km/h
+const calculateWindChill = (t, w) => (13.12 + 0.6215 * t - 11.37 * Math.pow(w, 0.16) + 0.3965 * t * Math.pow(w, 0.16)).toFixed(1);
 
 // Arrow function to update wind chill on DOM load
 document.addEventListener("DOMContentLoaded", () => { 
