@@ -137,6 +137,15 @@ footer a {
   text-decoration: underline;
 }
 
+/* Weather icon using ::after */
+.weather-table h3::after {
+  content: " ⛅";
+  font-size: 1.5em;
+  margin-left: 0.4em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
 /* ------------- Responsive Styles ------------- */
 @media (max-width: 900px) {
   .hero-overlay-layout,
@@ -190,6 +199,9 @@ footer a {
     display: block;
     margin: 0 auto;
     fill: var(--text) !important;
+  }
+  .weather-table h3::after {
+    content: "";
   }
 }
 
