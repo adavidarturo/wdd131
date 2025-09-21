@@ -1,4 +1,9 @@
 
+// Current year and last modified date
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+
+
 const tempC = 15; // Temperature in Celsius (matches <span id="temp">)
 const windKmh = 10; // Wind speed in km/h (matches <span id="wind">)
 
