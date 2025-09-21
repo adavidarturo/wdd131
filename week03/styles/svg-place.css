@@ -1,0 +1,14 @@
+
+
+/* Show weather emoticon, hide SVG */
+@media (min-width: 901px) {
+  .weather-icon-mobile { display: none; }
+  .weather-table h3::after {
+    content: " ⛅";
+    font-size: 1.5em;
+    margin-left: 0.4em;
+    vertical-align: middle;
+  }
+}
+
+
