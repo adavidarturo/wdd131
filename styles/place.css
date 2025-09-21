@@ -61,7 +61,7 @@ html, body, body main {
   box-shadow: none;
   margin: 0;
   padding: 0;
-  background: var(--background);
+  background: #b3c6e6; /* Un azul claro similar a la imagen hero */
 }
 
 /* Overlay tables (Data & Weather) */
