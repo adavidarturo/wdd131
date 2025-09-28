@@ -104,22 +104,6 @@ const temples = [
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340-main.jpg"
   },
-  {
-    templeName: "São Paulo Brazil",
-    location: "São Paulo, Brazil",
-    dedicated: "1978, October, 30",
-    area: 59636,
-    imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/_temp/017-S%C3%A3o-Paulo-Brazil-Temple.jpg"
-  },
-  {
-    templeName: "Paris France",
-    location: "Le Chesnay, France",
-    dedicated: "2017, May, 21",
-    area: 44000,
-    imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
-  }
 ];
 
 
