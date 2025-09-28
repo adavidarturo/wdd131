@@ -86,7 +86,7 @@ const temples = [
     dedicated: "2004, January, 11",
     area: 17500,
     imageUrl:
-    "https://tse4.mm.bing.net/th/id/OIP.Rbr4-XJisWY9VG-4oLJFBAHaDt?w=500&h=250&rs=1&pid=ImgDetMain&o=7&rm=3"
+    "images/accra-ghana-temple.webp"
   },
   {
     templeName: "Rome Italy",
@@ -94,7 +94,7 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 40000,
     imageUrl:
-    "http://t2.gstatic.com/images?q=tbn:ANd9GcRCOqx6qGJcuH3LbT7KeIUuUBYSbWJ5n708kLxfnEjFlbSSNBam"
+    "images/rome-italy-temple.webp"
   },
   {
     templeName: "Tokyo Japan",
@@ -102,7 +102,7 @@ const temples = [
     dedicated: "1980, October, 27",
     area: 52900,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-8154-main.jpg"
+    "images/tokyo-japan-temple.webp"
   },
 ];
 

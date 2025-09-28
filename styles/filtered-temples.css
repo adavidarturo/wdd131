@@ -86,6 +86,7 @@ main h1, main h2 {
 /* ---------------- Grid container ---------------- */
 .res-grid {
   display: grid;
+
   grid-template-columns: 1fr;
   gap: 1rem;
   padding: 1rem;
