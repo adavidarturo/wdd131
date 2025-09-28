@@ -1,10 +1,10 @@
 
-/* For screens 700px and up, use a grid with 3 columns for figures */
 @media (min-width: 700px) {
   #hamburger {
     display: none;
   }
-  #nav-menu { /* Always show nav menu on larger screens */
+
+  #nav-menu {
     display: flex;
     position: static;
     flex-direction: row;
@@ -15,20 +15,26 @@
     padding: 1rem 0;
     width: 100%;
   }
-  #nav-menu.open { 
-    display: flex; 
+
+  #nav-menu.open {
+    display: flex;
   }
-  #nav-menu a { /* Adjust nav links for larger screens */
+
+  #nav-menu a {
     width: auto;
     text-align: left;
     font-size: 1.1rem;
   }
 
-  main { /* Change main to a 3-column grid */
+  /* Update this part to target .res-grid instead of main */
+  .res-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-  figure img { 
+  /* And also this image selector to match your new structure */
+  .res-grid section img {
     max-width: 100%;
   }
 }
+
+
