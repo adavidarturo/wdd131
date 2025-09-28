@@ -41,7 +41,7 @@ header span {
   justify-content: center;
   gap: 1rem;
   background: #353535;
-  position: absolute;
+  position: static;
   padding: 1rem;
   top: 60px;
   left: 0;
@@ -86,8 +86,8 @@ main h1, main h2 {
 /* ---------------- Grid container ---------------- */
 .res-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   padding: 1rem;
 }
 

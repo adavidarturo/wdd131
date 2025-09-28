@@ -86,7 +86,7 @@ const temples = [
     dedicated: "2004, January, 11",
     area: 17500,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
+    "https://tse4.mm.bing.net/th/id/OIP.Rbr4-XJisWY9VG-4oLJFBAHaDt?w=500&h=250&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
     templeName: "Rome Italy",
@@ -94,7 +94,7 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 40000,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
+    "http://t2.gstatic.com/images?q=tbn:ANd9GcRCOqx6qGJcuH3LbT7KeIUuUBYSbWJ5n708kLxfnEjFlbSSNBam"
   },
   {
     templeName: "Tokyo Japan",
@@ -102,12 +102,12 @@ const temples = [
     dedicated: "1980, October, 27",
     area: 52900,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340-main.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-8154-main.jpg"
   },
 ];
 
 
-// 
+//  
 function createTempleCard(templesArr) {
   const grid = document.querySelector(".res-grid");
   grid.innerHTML = "";
