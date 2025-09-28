@@ -123,7 +123,7 @@ const temples = [
 ];
 
 
-// Crea y muestra las cards en el grid
+// 
 function createTempleCard(templesArr) {
   const grid = document.querySelector(".res-grid");
   grid.innerHTML = "";

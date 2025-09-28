@@ -1,11 +1,10 @@
-
 @media (min-width: 700px) {
   #hamburger {
     display: none;
   }
 
   #nav-menu {
-    display: flex;
+    display: flex !important;
     position: static;
     flex-direction: row;
     justify-content: center;
@@ -14,10 +13,6 @@
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     padding: 1rem 0;
     width: 100%;
-  }
-
-  #nav-menu.open {
-    display: flex;
   }
 
   #nav-menu a {
@@ -31,10 +26,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-  /* And also this image selector to match your new structure */
+
+  /* image selector to match your new structure */
   .res-grid section img {
     max-width: 100%;
   }
 }
-
 
