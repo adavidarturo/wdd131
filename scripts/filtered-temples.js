@@ -107,7 +107,6 @@ const temples = [
 ];
 
 
-//  
 function createTempleCard(templesArr) {
   const grid = document.querySelector(".res-grid");
   grid.innerHTML = "";
@@ -125,9 +124,9 @@ function createTempleCard(templesArr) {
     area.innerHTML = `<span class="label">Size: </span>${temple.area.toLocaleString()} sq ft`;
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
-    img.setAttribute("loading", "lazy");
     img.setAttribute("width", "350");
     img.setAttribute("height", "200");
+
 
     card.appendChild(name);
     card.appendChild(location);
