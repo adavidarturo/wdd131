@@ -1,0 +1,29 @@
+
+/* Colors root */
+:root {
+  --primary: #1e90ff; 
+  --secondary: #ffffff; 
+  --color-text: #333333; 
+  --title-font: 'Poppins', sans-serif;
+  --body-font: Arial, sans-serif;   
+
+}
+
+/*  */
+body {
+  font-family: var(--body-font);
+  background-color: var(--secondary);
+  color: var(--color-text);
+  margin: 1rem;
+}
+
+h1 {
+  color: var(--primary);
+  font-family: var(--title-font);
+}
+
+h2, h3 {
+    color: var(--color-text);
+}
+
+
