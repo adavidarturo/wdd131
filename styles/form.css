@@ -35,7 +35,7 @@ label, legend {
 
 label[for="productName"],
 label[for="installDate"] {
-    color: #0a1740;
+    color: #0a1740; 
 }
 
 input[type="text"],
@@ -74,7 +74,7 @@ textarea:focus {
 }
 
 .rating-group legend {
-    color: #0a1740;
+    color: #0a1740; 
 }
 
 .stars {
