@@ -1,7 +1,25 @@
+:root {
+    --color-bg: #f4f8fb;
+    --color-surface: #fff;
+    --color-primary: #003366;      
+    --color-primary-dark: #001a33; 
+    --color-accent: #005cb2;
+    --color-error: #b00020;        
+    --color-text: #111;           
+    --color-label: #111;          
+    --color-star-empty: #b3c6e0;   
+    --color-star-filled: #003366;
+    --color-footer-bg: #003366;
+    --color-footer-text: #fff;
+    --color-input-bg: #f9fbfd;
+    --color-input-border: #003366;
+    --color-required: #b00020;
+}
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f4f8fb;
-    color: #111;
+    background: var(--color-bg);
+    color: var(--color-text);
     margin: 0;
     padding: 0;
 }
@@ -9,20 +27,20 @@ body {
 main {
     max-width: 480px;
     margin: 40px auto;
-    background: #fff;
+    background: var(--color-surface);
     border-radius: 10px;
     box-shadow: 0 4px 24px rgba(0,60,120,0.08);
     padding: 2rem 2.5rem;
 }
 
 form h1 {
-    color: #111;
+    color: var(--color-label);
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
 label, legend, h1 {
-    color: #111;
+    color: var(--color-label);
 }
 
 label, legend {
@@ -34,7 +52,7 @@ label, legend {
 
 label[for="productName"],
 label[for="installDate"] {
-    color: #111;
+    color: var(--color-label);
 }
 
 input[type="text"],
@@ -43,25 +61,25 @@ select,
 textarea {
     width: 100%;
     padding: 0.6em;
-    border: 1px solid #003366;
+    border: 1px solid var(--color-input-border);
     border-radius: 5px;
     font-size: 1em;
     margin-bottom: 0.5em;
-    background: #f9fbfd;
+    background: var(--color-input-bg);
     transition: border 0.2s;
-    color: #111;
+    color: var(--color-text);
 }
 
 input[type="text"]:focus,
 input[type="date"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #003366;
+    border-color: var(--color-primary);
     outline: none;
 }
 
 .required {
-    color: #b00020;
+    color: var(--color-required);
     font-size: 1.1em;
     font-weight: bold;
 }
@@ -74,7 +92,7 @@ textarea:focus {
 }
 
 .rating-group legend {
-    color: #111;
+    color: var(--color-label);
 }
 
 .stars {
@@ -92,7 +110,7 @@ textarea:focus {
 
 .stars label {
     font-size: 2em;
-    color: #b3c6e0; 
+    color: var(--color-star-empty);
     cursor: pointer;
     transition: color 0.2s;
 }
@@ -100,12 +118,12 @@ textarea:focus {
 .stars input[type="radio"]:checked ~ label,
 .stars label:hover,
 .stars label:hover ~ label {
-    color: #003366;
+    color: var(--color-star-filled);
 }
 
 .stars .star-small {
     font-size: 1em;
-    color: #b00020;
+    color: var(--color-required);
 }
 
 .features {
@@ -132,7 +150,7 @@ textarea {
 
 .submit-btn {
     width: 100%;
-    background: #003366;
+    background: var(--color-primary);
     color: #fff;
     border: none;
     padding: 0.9em;
@@ -145,12 +163,12 @@ textarea {
 }
 
 .submit-btn:hover {
-    background: #001a33;
+    background: var(--color-primary-dark);
 }
 
 .footer-bar {
-    background: #003366;
-    color: #fff;
+    background: var(--color-footer-bg);
+    color: var(--color-footer-text);
     text-align: center;
     padding: 1em 0 0.5em 0;
     margin-top: 2em;
