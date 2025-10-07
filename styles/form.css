@@ -27,6 +27,7 @@ label, legend {
     margin-top: 1.2em;
     margin-bottom: 0.5em;
     font-weight: 500;
+    color: #111;
 }
 
 input[type="text"],
@@ -54,6 +55,7 @@ textarea:focus {
 .required {
     color: #d32f2f;
     font-size: 1.1em;
+    font-weight: bold;
 }
 
 .rating-group {
