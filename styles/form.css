@@ -3,17 +3,17 @@
     --color-surface: #fff;
     --color-primary: #003366;      
     --color-primary-dark: #001a33; 
-    --color-accent: #005cb2;
+    --color-accent: #072744;
     --color-error: #b00020;        
     --color-text: #111;           
     --color-label: #111;          
-    --color-star-empty: #b3c6e0;   
-    --color-star-filled: #003366;
-    --color-footer-bg: #003366;
+    --color-star-empty: #111;   
+    --color-star-filled: #c7c341;
+    --color-footer-bg: #06213c;
     --color-footer-text: #fff;
     --color-input-bg: #f9fbfd;
     --color-input-border: #003366;
-    --color-required: #b00020;
+    --color-required: #030303;
 }
 
 body {
