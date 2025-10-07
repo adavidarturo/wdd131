@@ -1,0 +1,136 @@
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f8fb;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 480px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,60,120,0.08);
+    padding: 2rem 2.5rem;
+}
+
+form h1 {
+    color: #1565c0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+label, legend {
+    display: block;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6em;
+    border: 1px solid #b3c6e0;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    background: #f9fbfd;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+.required {
+    color: #d32f2f;
+    font-size: 1.1em;
+}
+
+.rating-group {
+    margin-top: 1.2em;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.2em;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 2em;
+    color: #b3c6e0;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.stars input[type="radio"]:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #1976d2;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em 2em;
+    margin-bottom: 0.5em;
+}
+
+.features input[type="checkbox"] {
+    margin-right: 0.4em;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 0.9em;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 1.5em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background: #1565c0;
+}
+
+.footer-bar {
+    background: #1565c0;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0 0.5em 0;
+    margin-top: 2em;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer-bar p {
+    margin: 0.2em 0;
+}
+
