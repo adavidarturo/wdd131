@@ -58,13 +58,18 @@ textarea:focus {
 
 .rating-group {
     margin-top: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .stars {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: center;
     gap: 0.2em;
+    margin-top: -0.3em;
 }
 
 .stars input[type="radio"] {
@@ -89,6 +94,12 @@ textarea:focus {
     flex-wrap: wrap;
     gap: 1em 2em;
     margin-bottom: 0.5em;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
 }
 
 .features input[type="checkbox"] {
