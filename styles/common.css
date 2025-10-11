@@ -1,13 +1,13 @@
 
-:root { /* Main colors used */
-  --primary-blue: #4da6ff;
+:root {
+  --primary-blue: #1769aa; 
   --background: #fff;
-  --text: #222;
+  --text: #181818;         
   --accent: #e3f2fd;
-  --footer-bg: #f5faff;
-  --nav-bg: #f5faff;
-  --border: #d0e6fa;
-  --shadow: 0 2px 8px rgba(77,166,255,0.08);
+  --footer-bg: #eaf4fb;    
+  --nav-bg: #eaf4fb;       
+  --border: #b0c4d9;       
+  --shadow: 0 2px 8px rgba(23,105,170,0.10);
   --radius: 12px;
   --font-title: 'Poppins', Arial, sans-serif;
   --font-body: Arial, sans-serif;

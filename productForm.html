@@ -42,32 +42,32 @@
       <p>Leave your details and we will contact you soon. Select the product you are interested in.</p>
     </section>
     <section class="form-section">
-      <form id="contact-form" autocomplete="off" novalidate>
+      <form id="contact-form" autocomplete="on" novalidate>
         <div class="form-group">
           <label for="email">Email *</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" required autocomplete="email">
         </div>
         <div class="form-group">
           <label for="phone">Phone Number *</label>
-          <input type="tel" id="phone" name="phone" required pattern="[0-9\s\-\+]{7,}">
+          <input type="tel" id="phone" name="phone" required pattern="[0-9\s\-\+]{7,}" autocomplete="tel">
         </div>
         <div class="form-group">
           <label for="names">First Name(s) *</label>
-          <input type="text" id="names" name="names" required>
+          <input type="text" id="names" name="names" required autocomplete="given-name">
         </div>
         <div class="form-group">
           <label for="surnames">Last Name(s) *</label>
-          <input type="text" id="surnames" name="surnames" required>
+          <input type="text" id="surnames" name="surnames" required autocomplete="family-name">
         </div>
         <div class="form-group">
           <label for="product">Product of Interest *</label>
-          <select id="product" name="product" required>
-            <!-- Options in the array -->
+          <select id="product" name="product" required autocomplete="off">
+            <!-- Options goes here -->
           </select>
         </div>
         <div class="form-group">
           <label for="message">Additional Message (optional)</label>
-          <textarea id="message" name="message" rows="3"></textarea>
+          <textarea id="message" name="message" rows="3" autocomplete="off"></textarea>
         </div>
         <button type="submit" class="submit-btn">Send</button>
         <div id="form-success" class="form-success" style="display:none;">
